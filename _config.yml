@@ -1,0 +1,27 @@
+# Site settings
+title: 숲사람 일기
+author: 숲사람
+header-img: img/home-bg.jpg
+email: procyonq@gmail.com
+copyright_name: 숲사람의 기록
+description: "숲사람 블로그 - 백수 생활 1년 동안의 삶과 생각 그리고 기록"
+baseurl: ""
+url: "http://soopsaram.com"
+twitter_username:	jihuunk
+github_username:	jihuun
+facebook_username:	jihuun
+email_username:		procyonq
+instagram_username:	soopsaram
+
+# Google Analytics
+# To enable google analytics, uncomment below line with a valid Google Tracking ID
+google_tracking_id: UA-144749097-1
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 15
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
