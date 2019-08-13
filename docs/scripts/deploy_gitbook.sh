@@ -9,6 +9,7 @@ echo $GITBOOK_DIR $DEPLOY_DIR
 
 rm -r $DEPLOY_DIR/*
 cp -R $GITBOOK_DIR/* $DEPLOY_DIR
+rm -r $DEPLOY_DIR/docs
 
 git clean -fx $GITBOOK_DIR
 git clean -fx $NODEMODULS_DIR
