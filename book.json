@@ -1,9 +1,13 @@
 {
-    "plugins": ["ga"],
+    "plugins": ["ga", "edit-link"],
     "pluginsConfig": {
         "ga": {
             "token": "UA-145597833-1"
-        }
+        },
+        "edit-link": {
+            "base": "https://github.com/jihuun/travel/edit/master",
+            "label": "Edit"
+	}
     },
     "variables": {
         "BASE_URL": "http://soopsaram.com/travel"
