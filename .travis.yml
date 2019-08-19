@@ -1,3 +1,6 @@
 language: generic # don't install any environment
 
-script: bash ./scripts/deploy_gitbook.sh
+script: 
+  - bash gitbook install
+  - bash gitbook serve
+  - bash ./scripts/deploy_gitbook.sh
