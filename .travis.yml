@@ -1,6 +1,12 @@
-language: generic # don't install any environment
-
-script: 
-  - bash gitbook install
-  - bash gitbook serve
-  - bash ./scripts/deploy_gitbook.sh
+language: generic
+install:
+- npm install gitbook-cli -g
+- gitbook --version
+before_script:
+- gitbook install
+- gitbook serve
+script:
+- ./scripts/deploy_gitbook.sh
+env:
+  global:
+    secure: i/WfwWXjmo+RJYDY/yqAQ7zOWLKKtVlpy6WqQg40wUoOSEwlWoGr05/wAnHusDqjqL1cuPnsw54cEXWEywwX6o7fDuDTQaIgRifVvFXWyQGZmRTyykX6CQl3fdAWh0Cr0mS0E/6t3XHneQ59xV9zLpR4XRkdgJ3e1iii7inkLdxuHszG4Ud02D4tTL6Mrb+/iW/qAWs54Oa8DsrLFtKdBkG/bEWMIlXkplM8+YBKk4GPoJLLll37b0shReXoEeFaluJBYtDhGbV+5CNT1+N136Jo62iBXsNQIm/lSoklDYIx6vwHTTP6t4eHiBF5dU1nzQBcXe2ubRWsz5ZWUIbWRbXwX/XzrUmoiUbk+f0JfTTGHlgz+bV4Z+RAWaa1JPsN/wHIwggS/xFDUkClvSPiJo+iMIe1ouGMutDH6F+LpC838mcIcODpfIH6XX/sST2c53dl7WdRsw6ZLfU4FLAF6JW+1SRrWfFUwYX7zRNlrCYyvvq6AcLQCjc2vME1BASNRqrfct9IaMwjZI0y9rEq3MHEFkzJPFFARcts15FuGcFMvdoRAjKpguBLJHxM/8VOJ/oapNYTM3VggaxHcWrI9NhJFQaLxZq6nwrJif8rq+MSAjD4LDRa9l3zf5OM2ITDk/ZvgkKRyKLtJi/sBTRwIGL0JOocXGy/eXE7l9Vyuiw=
