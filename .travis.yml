@@ -4,7 +4,7 @@ install:
 - gitbook --version
 before_script:
 - gitbook install
-- gitbook serve
+- gitbook build ./ --log=debug --debug
 script:
 - ./scripts/deploy_gitbook.sh
 env:
