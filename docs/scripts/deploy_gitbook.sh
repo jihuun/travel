@@ -16,7 +16,7 @@ git clean -fx $GITBOOK_DIR
 git add .
 git branch
 git checkout master
-git commit -sm "blog: travel: update gitbook by TravisCI with build $TRAVIS_BUILD_NUMBER"
+git commit -sm "[skip travis] blog: travel: update gitbook by TravisCI with build number $TRAVIS_BUILD_NUMBER"
 git branch
 git log -2
 git push "https://${GH_TOKEN}@github.com/jihuun/travel" master
