@@ -14,5 +14,12 @@ rm -r $DEPLOY_DIR/docs
 git clean -fx $GITBOOK_DIR
 
 git add .
-git commit -sm "blog: travel: build & deploy with previous commit"
-git push origin master
+git branch
+git checkout master
+git commit -sm "blog: travel: update gitbook by TravisCI with build $TRAVIS_BUILD_NUMBER"
+git branch
+git log -2
+git push "https://${GH_TOKEN}@github.com/jihuun/travel" master
+#git add .
+#git commit -sm "blog: travel: build & deploy with previous commit [by travis]"
+#git push origin master
