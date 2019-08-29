@@ -1,5 +1,5 @@
 {
-    "plugins": ["ga", "edit-link"],
+    "plugins": ["ga", "edit-link", "toggle-chapters"],
     "pluginsConfig": {
         "ga": {
             "token": "UA-145597833-1"
