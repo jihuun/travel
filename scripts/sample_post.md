@@ -4,9 +4,14 @@ title:
 subtitle:   "여행 D+AA,  D+"
 date:       2017-MM-DD 12:00:10
 tags:       포스팅
-new:        yes
-header-img: img/post-travel-AA.jpg
+header-img:
 ---
+
+# 	    10분 빨리 앞당겨져 있던 시계를 다시 뒤로 늦췄다.
+```
+			2017년 MM월 DD일
+			휴직 첫날
+```
 
 
 ![](/img/17MMDD-.jpg)
