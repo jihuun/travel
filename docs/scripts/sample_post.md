@@ -7,15 +7,12 @@ tags:       포스팅
 header-img:
 ---
 
-# 	    10분 빨리 앞당겨져 있던 시계를 다시 뒤로 늦췄다.
+# 
+
 ```
 			2017년 MM월 DD일
-			휴직 첫날
+			파키스탄
 ```
-
-
-![](/img/17MMDD-.jpg)
-
 
 <center>
 <style>
@@ -39,4 +36,6 @@ header-img:
 </div>
 </center>
 
+---
 
+![](/img/17MMDD-.jpg)
