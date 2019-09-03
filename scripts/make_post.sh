@@ -6,6 +6,7 @@ _POST="posts"
 _SCRIPT="scripts"
 SAMPLE="$ROOT_DIR/$_SCRIPT/sample_post.md"
 FILE=$ROOT_DIR/$_POST/2017-$1-$2-$3.md
+POSTPATH=$_POST/2017-$1-$2-$3.md
 
 echo File name is $FILE
 
@@ -21,4 +22,7 @@ else
 	vi $FILE
 fi
 
-
+SUBJECT=$(grep "^# " $POSTPATH | sed -e 's/# //')
+echo "Title: $SUBJECT"
+echo "	* [$SUBJECT]($POSTPATH)" >> SUMMARY.md
+echo "	* [To Be Continued]()" >> SUMMARY.md
