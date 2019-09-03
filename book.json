@@ -1,5 +1,5 @@
 {
-    "plugins": ["ga", "edit-link", "toggle-chapters"],
+    "plugins": ["ga", "edit-link", "folding-chapters"],
     "pluginsConfig": {
         "ga": {
             "token": "UA-145597833-1"
