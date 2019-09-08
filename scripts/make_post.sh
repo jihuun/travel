@@ -10,7 +10,7 @@ POSTPATH=$_POST/2017-$1-$2-$3.md
 
 
 remove_last_line() {
-	sed -e '$ d' > temp.md
+	sed -e '$ d' $1 > temp.md
 	mv temp.md $1
 }
 
