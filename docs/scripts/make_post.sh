@@ -8,6 +8,12 @@ SAMPLE="$ROOT_DIR/$_SCRIPT/sample_post.md"
 FILE=$ROOT_DIR/$_POST/2017-$1-$2-$3.md
 POSTPATH=$_POST/2017-$1-$2-$3.md
 
+
+remove_last_line() {
+	sed -e '$ d' > temp.md
+	mv temp.md $1
+}
+
 echo File name is $FILE
 
 if [[ -e $FILE ]]; then
@@ -23,6 +29,7 @@ else
 fi
 
 SUBJECT=$(grep "^# " $POSTPATH | sed -e 's/# //')
+remove_last_line SUMMARY.md
 echo "Title: $SUBJECT"
 echo "	* [$SUBJECT]($POSTPATH)" >> SUMMARY.md
 echo "	* [To Be Continued]()" >> SUMMARY.md
