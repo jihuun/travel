@@ -1,12 +1,13 @@
 #! /bin/bash
 
+_YEAR="2017"
 CUR_DIR=$(pwd)
 ROOT_DIR="$CUR_DIR"
 _POST="posts"
 _SCRIPT="scripts"
 SAMPLE="$ROOT_DIR/$_SCRIPT/sample_post.md"
-FILE=$ROOT_DIR/$_POST/2017-$1-$2-$3.md
-POSTPATH=$_POST/2017-$1-$2-$3.md
+FILE=$ROOT_DIR/$_POST/$_YEAR-$1-$2-$3.md
+POSTPATH=$_POST/$_YEAR-$1-$2-$3.md
 
 
 remove_last_line() {
